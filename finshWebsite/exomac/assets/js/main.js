@@ -1247,8 +1247,6 @@ card_name.disabled = true;
 card_exp.disabled = true;
 card_cvv.disabled = true;
 
-
-
 card_number.oninput = function (event) {
   let v = document.getElementById("card_number").value;
   card_number.maxLength = 16;
