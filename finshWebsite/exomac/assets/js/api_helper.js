@@ -1,4 +1,4 @@
-const baseUrl = "{{live}}/api/v1/driver";
+const baseUrl = "https://frontend.tripu.net/public/api/v1/driver";
 
 const AppData = {
   baseUrl: baseUrl,
