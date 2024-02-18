@@ -73,7 +73,7 @@
                       <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
                       <ul class="sub-menu">
                         <li>
-                          <a href="profile_caption_en.html"><span class="menu-text">Modifier la légende du
+                          <a href="profile_caption_new_fr.html"><span class="menu-text">Modifier la légende du
                               profil</span></a>
                         </li>
                         <li>
@@ -279,7 +279,7 @@
           <div class="form-search">
             <input id="search" class="input-text" value="" placeholder="" type="search" />
             <button>
-              <i class="fa fa-search"></i>
+              <i class="pe-7s-close"></i>
             </button>
           </div>
         </form>
@@ -1955,6 +1955,32 @@
                   <a href="#" class="Ignore">Ignorerr</a>
                 </div>
               </div>
+              <div class="pagination_B mt-5">
+                <li class="page-item_B previous-page_B">
+                  <a href="javascript:void(0)" class="page-link_B">Prev</a>
+                </li>
+                <li class="page-item_B current-page_B">
+                  <a href="#" class="page-link_B active">1</a>
+                </li>
+                <li class="page-item_B current-page_B">
+                  <a href="#" class="page-link_B">2</a>
+                </li>
+                <li class="page-item_B current-page_B">
+                  <a href="#" class="page-link_B">3</a>
+                </li>
+                <li class="page-item_B dots">
+                  <a href="#" class="page-link_B">...</a>
+                </li>
+                <li class="page-item_B current-page_B">
+                  <a href="#" class="page-link_B">4</a>
+                </li>
+                <li class="page-item_B dots">
+                  <a href="#" class="page-link_B">...</a>
+                </li>
+                <li class="page-item_B next-page_B">
+                  <a href="" class="page-link_B">Next</a>
+                </li>
+              </div>
             </div>
           </div>
         </div>
@@ -1962,78 +1988,266 @@
         <!-- Start account_Info Content -->
         <div id="account_Info" class="news_content tabcontent content-tip_details" style="border: none">
           <div class="container">
-            <h2>Détails des informations sur le compte</h2>
-            <div class="personal_info">
-              <div class="container">
-                <div class="row align-items-center card_info">
-                  <div class="col-lg-12">
-                    <div class="information">
-                      <h2>Ahmed Adel morsy</h2>
-                      <h4>New york</h4>
-                      <h5>Notation</h5>
-                      <div class="rating">
-                        8.5
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                      </div>
-                      <p>Détails du compte</p>
-                      <form>
-                        <div class="row">
-                          <div class="col-lg-6 col-md-4 col-sm-12">
-                            <div class="input_box">
-                              <label for="">Nom</label>
-                              <input type="text" placeholder="Nom" required class="form-control-caption" />
-                            </div>
-                            <div class="input_box">
-                              <label for="">Email</label>
-                              <input type="email" placeholder="email" required class="form-control-caption" />
-                            </div>
-                            <div class="input_box">
-                              <label for="">téléphone</label>
-                              <input type="tel" placeholder="téléphone" required
-                                class="form-control-caption Accounttel" />
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-4 col-sm-12">
-                            <div class="input_box">
-                              <label for="">pays</label>
-                              <input type="text" placeholder="Egypt" readonly class="form-control-caption" />
-                            </div>
-                            <div class="gender">
-                              <span>Sélectionnez jars</span>
-                              <div class="custom-select w-200">
-                                <select class="js-example-responsive widthmyom" style="   
-                                     border-radius: 5px;
-                                    height: 48px;
-                                    border: none;
-                                    width: 75%;
-                                " id="gender" name="state">
-                                  <option value="" disabled selected>
-                                    -- Choisit --
-                                  </option>
-                                  <option value="1">Mâle</option>
-                                  <option value="2">Femelle</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="input_box">
-                              <label for="">mot de passe</label>
-                              <input type="password" placeholder="mot de passe" required class="form-control-caption" />
-                            </div>
+            <h2>Account Info Details</h2>
+            <div id="home" style="margin-top: 0" class="Home_content">
+              <div class="tab willwidth">
+                <button class="tabMedia" onclick="openAllMedia(event, 'car_photo')">
+                  Details
+                </button>
+                <button class="tabMedia" onclick="openAllMedia(event, 'car_doc')">
+                  Documents
+                </button>
+                <button class="tabMedia" onclick="openAllMedia(event, 'car_details')">
+                  Car
+                </button>
+                <!-- <button class="tablink designcolortab" onclick="openTaps(event, 'Tokyo')">
+                  Tokyo
+                </button> -->
+              </div>
+              <!-- Tab links -->
+              <div id="car_details" class="tabBoxMedia" style="display: none;">
+                <div class="container">
+                  <div class="content-car-info">
+
+                    <div class="car-images">
+                      <p>Car Images</p>
+                      <div class="row">
+                        <!-- col-lg-6 col-md-4 col-sm-12 -->
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <div class="id-card">
+                            <h2 id="media_type">Front Car</h2>
+                            <img id="media_img_car"
+                              src="finshWebsite/exomac/assets/images/document-images/car_shap/front_car.jpg" alt="" />
+                            <h4>photo Status: <span id="photo_status_car"></span></h4>
+                            <span id="reject_reason_car"></span>
                           </div>
                         </div>
-                      </form>
-                      <button type="submit" class="site-button" name="next">
-                        Suivante
-                      </button>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <div class="id-card">
+                            <h2 id="media_type">Back Car</h2>
+                            <img id="media_img_car"
+                              src="finshWebsite/exomac/assets/images/document-images/car_shap/back_car.jpg" alt="" />
+                            <h4>photo Status: <span id="photo_status_car"></span></h4>
+                            <span id="reject_reason_car"></span>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <div class="id-card">
+                            <h2 id="media_type">Right Car</h2>
+                            <img id="media_img_car"
+                              src="finshWebsite/exomac/assets/images/document-images/car_shap/right_car.jpg" alt="" />
+                            <h4>photo Status: <span id="photo_status_car"></span></h4>
+                            <span id="reject_reason_car"></span>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <div class="id-card">
+                            <h2 id="media_type">Left car</h2>
+                            <img id="media_img_car"
+                              src="finshWebsite/exomac/assets/images/document-images/car_shap/left_car.jpg" alt="" />
+                            <h4>photo Status: <span id="photo_status_car"></span></h4>
+                            <span id="reject_reason_car"></span>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <div class="id-card">
+                            <h2 id="media_type">InSide Car</h2>
+                            <img id="media_img_car"
+                              src="finshWebsite/exomac/assets/images/document-images/car_shap/inside_car-transformed.png"
+                              alt="" />
+                            <h4>photo Status: <span id="photo_status_car"></span></h4>
+                            <span id="reject_reason_car"></span>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <div class="id-card">
+                            <h2 id="media_type"></h2>
+                            <img id="media_img_car"
+                              src="finshWebsite/exomac/assets/images/document-images/car_shap/inside_car-transformed.png"
+                              alt="" />
+                            <h4>photo Status: <span id="photo_status_car"></span></h4>
+                            <span id="reject_reason_car"></span>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <div class="id-card">
+                            <!-- <h2 id="media_type"></h2> -->
+                            <img id="media_img_car"
+                              src="finshWebsite/exomac/assets/images/document-images/car_shap/inside_car-transformed.png"
+                              alt="" />
+                            <h4>photo Status: <span id="photo_status_car"></span></h4>
+                            <span id="reject_reason_car"></span>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- All documents content -->
+              <div id="car_doc" class="tabBoxMedia" style="display: none;">
+                <div class="container">
+                  <div class="person-documents">
+                    <div class="row">
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"> </h2>
+                          <img id="media_images"
+                            src="finshWebsite/exomac/assets/images/document-images/Group 56267892 (3).png" alt="" />
+                          <h4>photo Status: <span id="photo_status"></span></h4>
+                          <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"></h2>
+                          <img id="media_images"
+                            src="finshWebsite/exomac/assets/images/document-images/Group 56267892 (2).png" alt="" />
+                          <h4>photo Status: <span id="photo_status"></span></h4>
+                          <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <hr>
+                  <div class="caption-data">
+                    <div class="row">
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"></h2>
+                          <img id="media_images"
+                            src="finshWebsite/exomac/assets/images/document-images/user-profile-person.png" alt="" />
+                          <h4>photo Status: <span id="photo_status"></span></h4>
+                          <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"></h2>
+                          <img id="media_images" src="finshWebsite/exomac/assets/images/project/9.png" alt="" />
+                          <h4>photo Status: <span id="photo_status"></span></h4>
+                          <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="carLicence-documents">
+                    <div class="row">
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"></h2>
+                          <img id="media_images"
+                            src="finshWebsite/exomac/assets/images/document-images/Group 56267894 (6).png" alt="" />
+                          <h4>photo Status: <span id="photo_status"></span></h4>
+                          <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"></h2>
+                          <img id="media_images"
+                            src="finshWebsite/exomac/assets/images/document-images/Group 56267894 (4).png" alt="" />
+                          <h4>photo Status: <span id="photo_status"></span></h4>
+                          <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <hr>
+                  <!-- <div class="CaptionLicence-documents">
+                    <div class="row">
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"></h2>
+                          <img id="media_images" src="finshWebsite/exomac/assets/images/document-images/caption_license(2).png" alt="" />
+                         <h4>photo Status: <span id="photo_status"></span></h4>
+                        <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"></h2>
+                          <img id="media_images" src="finshWebsite/exomac/assets/images/document-images/caption_license(1).png" alt="" />
+                         <h4>photo Status: <span id="photo_status"></span></h4>
+                        <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div> -->
+                </div>
+              </div>
+              <!-- content car information -->
+              <div id="car_photo" class="tabBoxMedia">
+                <div class="personal_info">
+                  <div class="container">
+                    <div class="row align-items-center card_info">
+                      <div class="col-lg-12">
+                        <div class="information">
+                          <p>Account Details</p>
+                          <img id="captain_img" src="finshWebsite/exomac/assets/images/team/team-2.jpg">
+                          <h2 id="caption_name">Ahmed Adel morsy</h2>
+                          <h4 id="caption_country">New york</h4>
+                          <h5>Rating</h5>
+                          <div class="rating">
+                            <span id="caption_rating">5</span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+
+                          <!--<h4>photo Status: <span id="photo_status"></span></h4> -->
+                          <h2>photo type: <span id="photo_type"></span></h2>
+
+
+
+                          <img id="image_path" src="finshWebsite/exomac/assets/images/comment/comment1.png"
+                            alt="image_path">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- <div class="personal_info">
+                <div class="container">
+                  <div class="row align-items-center card_info">
+                    <div class="col-lg-12">
+                      <div class="information">
+                        <h2 ></h2>
+                        <h4 ></h4>
+                        <h5>Rating</h5>
+                        <div class="rating">
+                          8.5
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                        <p>Account Details</p>
+                        <h2 id="captain_email"></h2>
+                        <h2 id="captain_phone"></h2>
+                        <h2 id="captain_gender"></h2>
+                        <img >
+                        <p>All Media personal</p>
+                       
+
+                     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
           </div>
         </div>
         <!-- End account_Info Content -->
@@ -2297,7 +2511,7 @@
                   <p><a href="tel:+0201111579400">(02) 01110777579</a></p>
                   <p><a href="mailto:info@tripu.net">info@tripu.net</a></p>
                   <p>
-                    Address : Will be determined later Faisal 
+                    Address : Will be determined later Faisal
                   </p>
                   <div class="socialMedia">
                     <a href="https://www.facebook.com/profile.php?id=61554724552976"><i
@@ -2455,7 +2669,7 @@
               <span class="menu-toggle"><i class="fa-solid fa-caret-down"></i></span>
               <ul class="sub-menu">
                 <li>
-                  <a href="profile_caption_en.html"><span class="menu-text">Modifier la légende du profil</span></a>
+                  <a href="profile_caption_new_fr.html"><span class="menu-text">Modifier la légende du profil</span></a>
                 </li>
                 <li>
                   <a href="profile_client_new_fr.html"><span class="menu-text">Modifier le profil du client</span></a>

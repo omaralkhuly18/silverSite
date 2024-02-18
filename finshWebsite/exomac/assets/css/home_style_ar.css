@@ -24,20 +24,25 @@
 #logout {
   transform: rotate(180deg);
 }
-.accordion .item .item-header h2 button.btn.btn-link{
+
+.accordion .item .item-header h2 button.btn.btn-link {
   text-align: start;
 }
-.accordion .item .item-header h2 svg{
+
+.accordion .item .item-header h2 svg {
   float: left;
 }
+
 .t-p {
   padding: 40px 0px 0px 30px;
   text-align: right;
 }
-.content_frind{
+
+.content_frind {
   padding-right: 8px;
   text-align: start;
 }
+
 @media screen and (max-width: 1199px) and (min-width: 991px) {
   .profile_menu {
     right: 82%;
@@ -492,6 +497,27 @@ div.content-personal {
   float: right;
   height: auto !important;
   margin: 0 !important;
+}
+
+@media screen and (max-width: 767px) and (min-width: 230px) {
+  /* .sidebar {
+    margin: 0 -2% !important;
+  } */
+
+  .image_content{
+    display: flex;
+  }
+  .sidebar .image_content img{
+    margin: 0 auto !important;
+  }
+  div.content-personal {
+    margin-left: -26%;
+    margin-right: -3%;
+    padding: 1px;
+  }
+  .dashbordcaption {
+    margin: 0 -2%;
+  }
 }
 
 .car-images p,

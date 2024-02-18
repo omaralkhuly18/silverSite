@@ -671,7 +671,14 @@ progress {
   }
 
   .site-main-mobile-menu-inner {
-    width: 200px !important;
+    width: 260px !important;
+  }
+  .site-mobile-menu > ul > li > a{
+    font-size: 12px !important;
+  }
+  .site-mobile-menu .mega-menu li > a, 
+  .site-mobile-menu .sub-menu li > a{
+    font-size: 11px !important;
   }
   .notification-box {
     width: 210px !important;
@@ -683,7 +690,17 @@ progress {
     padding: 0 15px 0 15px !important;
   }
   .mobile-menu-logo {
-    width: 35% !important;
+    width: 25% !important;  
+  }
+  .mobile-menu-close .toggle,
+  .mobile-menu-close .toggle i{
+    width: 25px !important;
+  }
+  .mobile-menu-content{
+    padding: 10px 10px 100px !important;
+  }
+  .personal_info{
+    padding: 10px 0 !important;
   }
 }
 @media screen and (max-width: 338px) and (min-width: 301px) {
@@ -8982,7 +8999,7 @@ fieldset:disabled .btn {
   top: 0;
   z-index: 1020;
 }
-@media screen and (max-width: 579px) and (min-width: 290px) {
+@media screen and (max-width: 579px) and (min-width: 230px) {
   .flexspaeve {
     display: flex;
     justify-content: space-evenly;
@@ -9009,6 +9026,9 @@ fieldset:disabled .btn {
   }
   .widthmyom {
     width: 95% !important;
+  }
+  .input-info-box{
+    padding: 10px 10px 15px !important;
   }
 }
 button.tablinks {
@@ -35225,7 +35245,7 @@ textarea:focus {
   font-size: 200px;
   width: 100%;
   height: auto;
-  color: #fff;
+  color: #b2adb9;
   -webkit-transform: scale3d(0, 1, 1);
   transform: scale3d(0, 1, 1);
   -webkit-transform-origin: 0 50%;
@@ -35239,23 +35259,45 @@ textarea:focus {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .sidebar-search-input form .form-search input {
-    font-size: 150px;
+    font-size: 35px;
+    padding: 0 4%;
+  }
+  .sidebar-search-icon{
+    top: 10px !important;
+    font-size: 30px !important;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .sidebar-search-input form .form-search input {
-    font-size: 120px;
+    font-size: 30px;
+    padding: 1px 0;
+  }
+  .sidebar-search-icon{
+    font-size: 30px !important;
+    right: 10px !important;
+    top: 15px !important;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .sidebar-search-input form .form-search input {
-    font-size: 80px;
+    font-size: 30px;
+    padding: 1px 0;
+  }
+  .sidebar-search-icon{
+    font-size: 30px !important;
+    right: 10px !important;
+    top: 15px !important;
   }
 }
 @media only screen and (max-width: 767px) {
   .sidebar-search-input form .form-search input {
-    font-size: 50px;
+    font-size: 25px;
   }
+  .sidebar-search-icon {
+    top: 10% !important;
+    font-size: 20px !important;
+
+}
 }
 .sidebar-search-input form .form-search input:-ms-input-placeholder,
 .sidebar-search-input form .form-search input::-moz-placeholder,
@@ -39311,7 +39353,6 @@ div#forgot-password {
   border-radius: 10px;
   width: auto;
   background-color: #fff;
-
   padding: 25px 30px 30px;
 }
 .verified_content .varify-box {
