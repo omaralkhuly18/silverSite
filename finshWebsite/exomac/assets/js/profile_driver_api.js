@@ -6,7 +6,7 @@ var carModelId = "";
 var typeOfCarId = "";
 var yearSelectId = "";
 const updateProfilePhotoLink =
-  "{{live}}/api/v1/driver/profile/media/updateUploadProfile";
+  "https://testsilver.tripu.net/api/v1/driver/profile/media/updateUploadProfile";
 const uploadAllMediaLink =
   "{{live}}/api/v1/driver/profile/media/uploadProfile";
 const driversProfileLink =

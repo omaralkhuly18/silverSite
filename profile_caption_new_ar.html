@@ -1039,7 +1039,7 @@
                 <div class="row align-items-center card_info">
                   <div class="col-lg-12">
                     <div class="information">
-                      <h2>أحمد عادل morsy</h2>
+                      <h2>أحمد عادل مرسى</h2>
                       <h4>New york</h4>
                       <h5>تقييم</h5>
                       <div class="rating">
@@ -2183,75 +2183,231 @@
         <!-- Start account_Info Content -->
         <div id="account_Info" class="news_content tabcontent content-tip_details" style="border: none">
           <div class="container">
-            <h2>تفاصيل معلومات الحساب</h2>
-            <div class="personal_info">
-              <div class="container">
-                <div class="row align-items-center card_info">
-                  <div class="col-lg-12">
-                    <div class="information">
-                      <h2>أحمد عادل morsy</h2>
-                      <h4>New york</h4>
-                      <h5>تقييم</h5>
-                      <div class="rating">
-                        8.5
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                      </div>
-                      <p>تفاصيل الحساب</p>
-                      <form>
-                        <div class="row">
-                          <div class="col-lg-6 col-md-4 col-sm-12">
-                            <div class="input_box">
-                              <label for="">الاسم</label>
-                              <input type="text" placeholder="ادخل الاسم" required class="form-control-caption" />
-                            </div>
-                            <div class="input_box">
-                              <label for="">الإميل</label>
-                              <input type="email" placeholder="ادخل البريد الالكترونى" required
-                                class="form-control-caption" />
-                            </div>
-                            <div class="input_box">
-                              <label for="">الهاتف</label>
-                              <input type="tel" placeholder="ادخل الهاتف" required
-                                class="form-control-caption Accounttel" />
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-md-4 col-sm-12">
-                            <div class="input_box">
-                              <label for="">الدولة</label>
-                              <input type="text" placeholder="مصر" readonly class="form-control-caption" />
-                            </div>
-                            <div class="gender">
-                              <span>حدد الجنس</span>
-                              <div class="custom-select w-200">
-                                <select class="js-example-responsive widthmyom" style="   
-                                   border-radius: 5px;
-                                  height: 48px;
-                                  border: none;
-                                  width: 75%;
-                              " id="gender" name="state">
-                                  <option value="" disabled selected>
-                                    -- إختر --
-                                  </option>
-                                  <option value="1">ذكر</option>
-                                  <option value="2">أنثي</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="input_box">
-                              <label for="">الرقم السري</label>
-                              <input type="password" placeholder="ادخل الرقم السري" required
-                                class="form-control-caption" />
-                            </div>
+            <h2> تفاصيل معلومات الحساب </h2>
+            <div id="home" style="margin-top: 0" class="Home_content">
+              <div class="tab willwidth">
+                <button class="tabMedia" onclick="openAllMedia(event, 'car_photo')">
+                  تفاصيل
+                </button>
+                <button class="tabMedia" onclick="openAllMedia(event, 'car_doc')">
+                  وثائق
+                </button>
+                <button class="tabMedia" onclick="openAllMedia(event, 'car_details')">
+                  سيارة
+                </button>
+                <!-- <button class="tablink designcolortab" onclick="openTaps(event, 'Tokyo')">
+                  Tokyo
+                </button> -->
+              </div>
+              <!-- Tab links -->
+              <div id="car_details" class="tabBoxMedia" style="display: none;">
+                <div class="container">
+                  <div class="content-car-info">
+
+                    <div class="car-images">
+                      <p> صور السيارات </p>
+                      <div class="row">
+                        <!-- col-lg-6 col-md-4 col-sm-12 -->
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <div class="id-card">
+                            <h2 id="media_type"> السيارة الأمامية </h2>
+                            <img id="media_img_car"
+                              src="finshWebsite/exomac/assets/images/document-images/car_shap/front_car.jpg" alt="" />
+                            <h4> حالة الصورة:  <span id="photo_status_car"></span></h4>
+                            <span id="reject_reason_car"></span>
                           </div>
                         </div>
-                      </form>
-                      <button type="submit" class="site-button" name="التالى">
-                        التالى
-                      </button>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <div class="id-card">
+                            <h2 id="media_type"> السيارة الخلفية </h2>
+                            <img id="media_img_car"
+                              src="finshWebsite/exomac/assets/images/document-images/car_shap/back_car.jpg" alt="" />
+                            <h4> حالة الصورة:  <span id="photo_status_car"></span></h4>
+                            <span id="reject_reason_car"></span>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <div class="id-card">
+                            <h2 id="media_type"> السيارة الصحيحة </h2>
+                            <img id="media_img_car"
+                              src="finshWebsite/exomac/assets/images/document-images/car_shap/right_car.jpg" alt="" />
+                            <h4> حالة الصورة: <span id="photo_status_car"></span></h4>
+                            <span id="reject_reason_car"></span>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <div class="id-card">
+                            <h2 id="media_type"> السيارة اليسرى </h2>
+                            <img id="media_img_car"
+                              src="finshWebsite/exomac/assets/images/document-images/car_shap/left_car.jpg" alt="" />
+                            <h4> حالة الصورة:  <span id="photo_status_car"></span></h4>
+                            <span id="reject_reason_car"></span>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <div class="id-card">
+                            <h2 id="media_type"> داخل السيارة </h2>
+                            <img id="media_img_car"
+                              src="finshWebsite/exomac/assets/images/document-images/car_shap/inside_car-transformed.png"
+                              alt="" />
+                            <h4> حالة الصورة: <span id="photo_status_car"></span></h4>
+                            <span id="reject_reason_car"></span>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <div class="id-card">
+                            <h2 id="media_type"></h2>
+                            <img id="media_img_car"
+                              src="finshWebsite/exomac/assets/images/document-images/car_shap/inside_car-transformed.png"
+                              alt="" />
+                            <h4> حالة الصورة: <span id="photo_status_car"></span></h4>
+                            <span id="reject_reason_car"></span>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <div class="id-card">
+                            <!-- <h2 id="media_type"></h2> -->
+                            <img id="media_img_car"
+                              src="finshWebsite/exomac/assets/images/document-images/car_shap/inside_car-transformed.png"
+                              alt="" />
+                            <h4> حالة الصورة: <span id="photo_status_car"></span></h4>
+                            <span id="reject_reason_car"></span>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- All documents content -->
+              <div id="car_doc" class="tabBoxMedia" style="display: none;">
+                <div class="container">
+                  <div class="person-documents">
+                    <div class="row">
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"> </h2>
+                          <img id="media_images"
+                            src="finshWebsite/exomac/assets/images/document-images/Group 56267892 (3).png" alt="" />
+                          <h4> حالة الصورة: <span id="photo_status"></span></h4>
+                          <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"></h2>
+                          <img id="media_images"
+                            src="finshWebsite/exomac/assets/images/document-images/Group 56267892 (2).png" alt="" />
+                          <h4> حالة الصورة: <span id="photo_status"></span></h4>
+                          <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <hr>
+                  <div class="caption-data">
+                    <div class="row">
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"></h2>
+                          <img id="media_images"
+                            src="finshWebsite/exomac/assets/images/document-images/user-profile-person.png" alt="" />
+                          <h4> حالة الصورة: <span id="photo_status"></span></h4>
+                          <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"></h2>
+                          <img id="media_images" src="finshWebsite/exomac/assets/images/project/9.png" alt="" />
+                          <h4> حالة الصورة: <span id="photo_status"></span></h4>
+                          <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="carLicence-documents">
+                    <div class="row">
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"></h2>
+                          <img id="media_images"
+                            src="finshWebsite/exomac/assets/images/document-images/Group 56267894 (6).png" alt="" />
+                          <h4> حالة الصورة: <span id="photo_status"></span></h4>
+                          <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"></h2>
+                          <img id="media_images"
+                            src="finshWebsite/exomac/assets/images/document-images/Group 56267894 (4).png" alt="" />
+                          <h4> حالة الصورة: <span id="photo_status"></span></h4>
+                          <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <hr>
+                  <!-- <div class="CaptionLicence-documents">
+                    <div class="row">
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"></h2>
+                          <img id="media_images" src="finshWebsite/exomac/assets/images/document-images/caption_license(2).png" alt="" />
+                         <h4> حالة الصورة: <span id="photo_status"></span></h4>
+                        <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-12">
+                        <div class="id-card">
+                          <h2 id="title_media" class="title"></h2>
+                          <img id="media_images" src="finshWebsite/exomac/assets/images/document-images/caption_license(1).png" alt="" />
+                         <h4> حالة الصورة: <span id="photo_status"></span></h4>
+                        <span id="reject_reason"></span>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div> -->
+                </div>
+              </div>
+              <!-- content car information -->
+              <div id="car_photo" class="tabBoxMedia">
+                <div class="personal_info">
+                  <div class="container">
+                    <div class="row align-items-center card_info">
+                      <div class="col-lg-12">
+                        <div class="information">
+                          <p> تفاصيل الحساب </p>
+                          <img id="captain_img" src="finshWebsite/exomac/assets/images/team/team-2.jpg">
+                          <h2 id="caption_name" class="ArabicInHer"> أحمد عادل مرسي </h2>
+                          <h4 id="caption_country"> نيويورك </h4>
+                          <h5> تقييم </h5>
+                          <div class="rating">
+                            <span id="caption_rating">5</span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+
+                          <!--<h4> حالة الصورة: <span id="photo_status"></span></h4> -->
+                          <h2 class="ArabicInHer"> نوع الصورة:  <span id="photo_type"></span></h2>
+
+
+
+                          <img id="image_path" src="finshWebsite/exomac/assets/images/comment/comment1.png"
+                            alt="image_path">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -2497,7 +2653,7 @@
                 <div class="content-footer">
                   <p><a href="tel:+0201111579400">(02) 01110777579</a></p>
                   <p><a href="mailto:info@tripu.net">info@tripu.net</a></p>
-                  <p> العنوان : سوف يحدد فيما بعد</p>
+                  <!-- <p>العنوان : سوف يحدد فيما بعد</p> -->
                   <div class="socialMedia">
                     <a href="https://www.facebook.com/profile.php?id=61554724552976"><i
                         class="fa-brands fa-facebook"></i></a>
@@ -2587,7 +2743,7 @@
               <a href="#">
                 <img src="finshWebsite/exomac/assets/images/project/AppStore.png">
               </a>
-              <a href="https://play.google.com/store/apps/details?id=com.tripu.tripu&pli=1">
+              <a href="download_ar.html">
                 <img src="finshWebsite/exomac/assets/images/project/googlePlay.png">
               </a>
             </div>
@@ -2804,7 +2960,7 @@
       });
     }
   </script>
-  
+
   <!-- End Modify-->
   <!-- Main Activation JS -->
   <script src="finshWebsite/exomac/assets/js/main.js"></script>

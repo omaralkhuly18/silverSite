@@ -539,6 +539,10 @@ div.content-personal {
 
 #home h2 {
   text-align: center;
+}  
+
+.ArabicInHer{
+  text-align: right !important;
 }
 
 .tab-two {
@@ -567,6 +571,57 @@ div.content-personal {
 }
 
 /* =============How to used App Style ===========*/
+.down_tripu {
+  width: 80% !important;
+}
+
+#icons_down_tripu {
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 1326px) and (min-width: 992px) {
+  .down_tripu{
+    width: 45% !important;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px){
+  .down_tripu{
+    width: 60% !important;
+  } 
+}
+
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  .down_tripu{
+    width: 45% !important;
+  }
+
+  p.paragraph_tripu {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 450px) {
+  .down_tripu{
+    width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 450px) and (min-width: 350px) {
+  .down_tripu{
+    width: 60% !important;
+  }
+}
+
+@media screen and (max-width: 350px) and (min-width: 230px) {
+  .down_tripu{
+    width: 100% !important;
+  }
+  p.paragraph_tripu {
+    font-size: 19px;
+  }
+}
+
 .left-container {
   right: 0;
 }
