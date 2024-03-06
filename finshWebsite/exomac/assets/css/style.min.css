@@ -41658,7 +41658,7 @@ svg:not(:root) {
 }
 
 .down_tripu {
-  width: 90%;
+  width: 50%;
   display: flex;
   justify-content: center;
   background-color: #8c8fb2;
